@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "NeueMachina";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #E0F7FA;
+}
+
+/* frontpage */
+.frontpage {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 3vw;
+    color: black;
+    font-size: large;
+    position: relative;
+}
+
+#nav-menu {
+    display: flex;
+    gap: 5vw;
+    list-style-type: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+#nav-menu li a {
+    color: black;
+    text-decoration: none;
+    text-shadow: 1px 1px 6px rgb(20, 14, 14);
+}
+
+#nav-menu li a:hover {
+    color: darkorange;
+}
+
+/* Hide the menu icon on larger screens */
+.fa-bars {
+    display: none;
+    cursor: pointer;
+}
+
+/* Front page content */
+.frontpagecontent {
+    text-align: center;
+    margin-top: 20vh;
+    font-style: italic;
+    font-size: 2vw;
+}
+
+.frontpagecontent h1 {
+    margin-top: 4vh;
+    font-weight: bolder;
+}
+
+.frontpagecontent span {
+    text-shadow: 1px 1px 3px rgb(20, 14, 14);
+}
+
+.frontpagecontent button {
+    width: 35vw;
+    height: 9vh;
+    border-radius: 5px;
+    margin-top: 7vh;
+    background-color: darkorange;
+    font-weight: 900;
+    font-size: 2vw;
+    box-shadow: 5px 5px 35px black;
+}
+
+.frontpagecontent span:hover {
+    color: darkorange;
+}
+
+.frontpagecontent button:hover {
+    border: 2px solid black;
+}
+
+.mt {
+    margin-top: 2vh;
+}
+
+/* Semester page */
+.semester {
+    height: 100%;
+    width: 100%;
+}
+
+.semestercontent {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5vw;
+}
+
+.semestercontent h3 {
+    font-size: 6vw;
+    text-shadow: 1px 1px 3px rgb(20, 14, 14);
+    font-style: italic;
+}
+
+.semestercontent h3:hover {
+    color: darkorange;
+}
+
+.semesterbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sem1, .sem2, .sem3, .sem4 {
+    height: 20vh;
+    width: 30%;
+    margin-left: 13vw;
+    margin-top: 10vh;
+    background-color: darkorange;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5vw;
+    box-shadow: 4px 4px 35px black;
+}
+
+.sem1 a, .sem2 a, .sem3 a, .sem4 a {
+    color: black;
+    text-decoration: none;
+    font-size: 6vw;
+    text-shadow: 1px 1px 3px rgb(20, 14, 14);
+    font-style: italic;
+    margin-left: 7vw;
+    margin-top: 2vh;
+}
+
+/* Contact us */
+.contact {
+    width: 100%;
+    height: 100%;
+}
+
+.contactcontent {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5vw;
+}
+
+.contactcontent h3 {
+    font-size: 6vw;
+    text-shadow: 1px 1px 3px rgb(20, 14, 14);
+    font-style: italic;
+}
+
+.contactcontent h3:hover {
+    color: darkorange;
+}
+
+.fa-arrow-down {
+    font-size: 3.5vw;
+    text-shadow: 1px 1px 3px darkorange;
+}
+
+.contactbox {
+    height: 40vh;
+    width: 60%;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    background-color: darkorange;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5vw;
+    box-shadow: 4px 4px 35px black;
+}
+
+.left {
+    margin-left: 5vw;
+    margin-top: 5vh;
+    font-size: 1.3vw;
+    font-weight: bolder;
+}
+
+.right {
+    margin-right: 5vw;
+    margin-top: 5vh;
+    font-size: 1.3vw;
+    font-weight: bolder;
+}
+
+.left i,
+.right i {
+    margin-top: 2vh;
+    font-size: 2vw;
+}
+
+.left a,
+.right a {
+    text-decoration: none;
+    color: black;
+    margin-left: 1vw;
+}
+
+/* Design for mobile */
+@media (max-width: 600px) {
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%; /* Positioning the dropdown right below the nav */
+        left: 0;
+        width: 100%;
+        background-color: #E0F7FA;
+        flex-direction: column;
+        gap: 5vh;
+        padding: 3vh;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #nav-menu.active {
+        display: flex;
+       flex-direction:row;
+       justify-content: space-evenly;
+    }
+
+    .fa-bars {
+        display: inline;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Styling for smaller screen items */
+    #nav-menu li {
+        text-align: center;
+    }
+
+    .frontpagecontent h2 {
+        font-size: 5vw;
+        font-weight: bolder;
+    }
+
+    .frontpagecontent h1 {
+        font-size: 5.5vw;
+        margin-top: 25vh;
+    }
+
+    .frontpagecontent button {
+        font-size: 6vw;
+        width: 85vw;
+        height: 10vh;
+    }
+
+    /* Contact box css */
+    .contactbox {
+        display: inline-block;
+    }
+
+    .left {
+        margin-left: 15vw;
+        margin-top: 5vh;
+        font-size: 3vw;
+        font-weight: bolder;
+    }
+
+    .right {
+        margin-top: 5vh;
+        font-size: 3vw;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    #sems {
+        margin-top:6vh;
+    }
+}

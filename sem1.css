@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: #E0F7FA;
+}
+h1{
+    margin-top: 3vh;
+    margin-left: 35vw;
+    font-size: 4vw;
+
+}
+h1:hover {
+    color: darkorange;
+}
+h1:hover {
+    color: darkorange;
+    box-shadow: 5px 5px 35px black;
+    width: 28%;
+}
+h2{
+    margin-top: 4vh;
+    font-size: 2.8vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.subjects{
+    display: flex;
+    justify-content: space-evenly;
+}
+.syllabus li{
+    list-style: none;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 2.4vw;
+}
+.syllabus li a{
+    text-decoration: none;
+}
+.exam li{
+    list-style: none;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 2.4vw;
+}
+.exam li a{
+    text-decoration: none;
+}
+li a{
+    color:darkcyan;
+}
+.ytlink li{
+    list-style: none;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 2.4vw;
+}
+.ytlink li a{
+    text-decoration: none;
+}
+.midexam li{
+    list-style: none;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 2.4vw;
+}
+.midexam li a{
+    text-decoration: none;
+}
+.Notes li{
+    list-style: none;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    font-size: 2.4vw;
+}
+.Notes li a{
+    text-decoration: none;
+}
